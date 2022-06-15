@@ -31,6 +31,7 @@ namespace UserRegistration
         {
             return Regex.IsMatch(mobilenum, regex_MobileNO);
         }
+
         public bool validatePassword(string password)
         {
             return Regex.IsMatch(password, regex_Password);
