@@ -9,16 +9,16 @@
 
             UserRegister userRegister = new UserRegister();
 
-            Console.WriteLine("Enter the EmailID: ");
-            string Email = Console.ReadLine();
+            Console.WriteLine("Enter the Mobile Number: ");
+            string MobileNum = Console.ReadLine();
 
-            if (userRegister.validateEmailID(Email))
+            if (userRegister.validateMobileNumber(MobileNum))
             {
-                Console.WriteLine("Pattern Match");
+                Console.WriteLine("Mobile Number is valid");
             }
             else
             {
-                Console.WriteLine("Pattern not Match");
+                Console.WriteLine("Mobile Number is not valid");
             }
         }
     }
