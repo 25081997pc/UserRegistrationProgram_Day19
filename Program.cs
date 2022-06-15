@@ -9,16 +9,16 @@
 
             UserRegister userRegister = new UserRegister();
 
-            Console.WriteLine("Enter the Mobile Number: ");
-            string MobileNum = Console.ReadLine();
+            Console.WriteLine("Enter the Password: ");
+            string passWord = Console.ReadLine();
 
-            if (userRegister.validateMobileNumber(MobileNum))
+            if (userRegister.validatePassword(passWord))
             {
-                Console.WriteLine("Mobile Number is valid");
+                Console.WriteLine("Password is valid");
             }
             else
             {
-                Console.WriteLine("Mobile Number is not valid");
+                Console.WriteLine("Password is not valid");
             }
         }
     }
