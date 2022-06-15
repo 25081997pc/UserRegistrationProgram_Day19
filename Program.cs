@@ -8,10 +8,11 @@
             Console.WriteLine("Welcome to the User Registration Program");
 
             UserRegister userRegister = new UserRegister();
-            Console.WriteLine("Enter the Last Name: ");
-            string Lastname = Console.ReadLine();
 
-            if(userRegister.validateLastName(Lastname))
+            Console.WriteLine("Enter the EmailID: ");
+            string Email = Console.ReadLine();
+
+            if (userRegister.validateEmailID(Email))
             {
                 Console.WriteLine("Pattern Match");
             }
