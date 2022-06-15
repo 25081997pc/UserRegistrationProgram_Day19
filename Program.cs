@@ -10,7 +10,6 @@
             UserRegister userRegister = new UserRegister();
 
             Console.WriteLine("Enter the Password: ");
-
             string passWord = Console.ReadLine();
 
             if (userRegister.validatePassword(passWord))
