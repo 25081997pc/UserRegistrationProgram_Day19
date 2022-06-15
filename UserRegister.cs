@@ -9,11 +9,11 @@ namespace UserRegistration
 {
     public class UserRegister
     {
-        public string regex_FirstName = "^[A-Z]{1}[a-z]{2,8}$";
+        public string regex_LastName = "^[A-Z]{1}[a-z]{2,8}$";
 
-        public bool validateFirstName(string firstname)
+        public bool validateLastName(string lastname)
         {
-            return Regex.IsMatch(firstname, regex_FirstName);
+            return Regex.IsMatch(lastname, regex_LastName);
         }
     }
 }
