@@ -20,5 +20,9 @@ namespace UserRegistration
         {
             throw (new MobileNumberException("Mobile Format is wrong: Mobile Number should have country code and 10 numbers"));
         }
+        public void email()
+        {
+            throw (new EmailException("Email is InValid: Email should be in correct format"));
+        }
     }
 }
