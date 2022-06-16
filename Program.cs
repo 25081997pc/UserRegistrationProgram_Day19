@@ -25,6 +25,26 @@
             {
                 Console.WriteLine(e.Message);
             }
+            Console.WriteLine("-----------------------------");
+
+            Console.WriteLine("Enter the Last Name: ");
+            string lastname = Console.ReadLine();
+            try
+            {
+                if (userRegister.validateLastName(lastname))
+                {
+                    Console.WriteLine("LastName is valid");
+                }
+                else
+                {
+                    exceptionHandler.lastname();
+                }
+            }
+            catch (LastNameException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine("-----------------------------");
         }
     }
 }       
