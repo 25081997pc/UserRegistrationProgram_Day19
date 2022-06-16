@@ -64,6 +64,26 @@
                 Console.WriteLine(e.Message);
             }
             Console.WriteLine("-----------------------------");
+
+            Console.WriteLine("Enter the Email: ");
+            string email = Console.ReadLine();
+            try
+            {
+                if (userRegister.validateEmailID(email))
+                {
+                    Console.WriteLine("Email is Valid");
+                }
+                else
+                {
+                    exceptionHandler.email();
+                }
+            }
+            catch (EmailException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine("-----------------------------");
+
         }
     }
 }       
