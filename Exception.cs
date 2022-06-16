@@ -20,4 +20,11 @@ namespace UserRegistration
 
         }
     }
+    public class MobileNumberException : Exception
+    {
+        public MobileNumberException(string messege) : base(messege)
+        {
+
+        }
+    }
 }
