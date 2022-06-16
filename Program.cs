@@ -45,6 +45,25 @@
                 Console.WriteLine(e.Message);
             }
             Console.WriteLine("-----------------------------");
+
+            Console.WriteLine("Enter the Mobile Number: ");
+            string mobilenum = Console.ReadLine();
+            try
+            {
+                if (userRegister.validateMobileNumber(mobilenum))
+                {
+                    Console.WriteLine("Mobile Number is Valid");
+                }
+                else
+                {
+                    exceptionHandler.mobilenumber();
+                }
+            }
+            catch (MobileNumberException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine("-----------------------------");
         }
     }
 }       
