@@ -4,21 +4,27 @@
     {
         public static void Main(string[] args)
         {
-            
+            ExceptionHandler exceptionHandler = new ExceptionHandler();
             Console.WriteLine("Welcome to the User Registration Program");
 
             UserRegister userRegister = new UserRegister();
-            Console.WriteLine("Enter the Password: ");
-            string passWord = Console.ReadLine();
-
-            if (userRegister.validatePassword(passWord))
+            Console.WriteLine("Enter the First Name: ");
+            string firstname = Console.ReadLine();
+            try
             {
-                Console.WriteLine("Password is valid");
+                if (userRegister.validateFirstName(firstname))
+                {
+                    Console.WriteLine("FirstName is valid");
+                }
+                else
+                {
+                    exceptionHandler.firstname();
+                }
             }
-            else
+            catch(FirstNameException e)
             {
-                Console.WriteLine("Password is not valid");
+                Console.WriteLine(e.Message);
             }
         }
     }
-}
+}       
