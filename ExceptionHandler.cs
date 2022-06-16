@@ -16,5 +16,9 @@ namespace UserRegistration
         {
             throw (new LastNameException("last Name pattern is wrong:First letter should be capital and it should have minimum 3 characters"));
         }
+        public void mobilenumber()
+        {
+            throw (new MobileNumberException("Mobile Format is wrong: Mobile Number should have country code and 10 numbers"));
+        }
     }
 }
