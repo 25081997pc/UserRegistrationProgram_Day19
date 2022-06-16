@@ -24,5 +24,9 @@ namespace UserRegistration
         {
             throw (new EmailException("Email is InValid: Email should be in correct format"));
         }
+        public void password()
+        {
+            throw (new PasswordException("Password is InValid: Password should have 8 characters"));
+        }
     }
 }
