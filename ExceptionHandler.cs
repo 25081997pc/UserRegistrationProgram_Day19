@@ -12,5 +12,9 @@ namespace UserRegistration
         {
             throw (new FirstNameException("First Name pattern is wrong:First letter should be capital and it should have minimum 3 characters"));
         }
+        public void lastname()
+        {
+            throw (new LastNameException("last Name pattern is wrong:First letter should be capital and it should have minimum 3 characters"));
+        }
     }
 }
