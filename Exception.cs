@@ -34,5 +34,13 @@ namespace UserRegistration
 
         }
     }
+    public class PasswordException : Exception
+    {
+        public PasswordException(string messege) : base(messege)
+        {
+
+        }
+    }
+
 
 }
