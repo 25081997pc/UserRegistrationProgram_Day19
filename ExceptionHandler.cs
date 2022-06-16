@@ -26,7 +26,7 @@ namespace UserRegistration
         }
         public void password()
         {
-            throw (new PasswordException("Password is InValid: Password should have 8 characters"));
+            throw (new PasswordException("Password is InValid: Password should have 8 characters and should have at least 1 UpperCase"));
         }
     }
 }
