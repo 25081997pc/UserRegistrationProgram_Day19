@@ -29,6 +29,7 @@ namespace UserRegistration
             return Regex.IsMatch(Email, regex_EmailID);
             
         }
+
         public bool validateMobileNumber(string mobilenum)
         {
             return Regex.IsMatch(mobilenum, regex_MobileNO);
