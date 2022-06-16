@@ -84,6 +84,25 @@
             }
             Console.WriteLine("-----------------------------");
 
+            Console.WriteLine("Enter the Password: ");
+            string password = Console.ReadLine();
+            try
+            {
+                if (userRegister.validatePassword(password))
+                {
+                    Console.WriteLine("Password is Valid");
+                }
+                else
+                {
+                    exceptionHandler.password();
+                }
+            }
+            catch (PasswordException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine("-----------------------------");
+
         }
     }
 }       
