@@ -27,4 +27,12 @@ namespace UserRegistration
 
         }
     }
+    public class EmailException : Exception
+    {
+        public EmailException(string messege) : base(messege)
+        {
+
+        }
+    }
+
 }
