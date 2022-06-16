@@ -8,7 +8,14 @@ namespace UserRegistration
 {
     public class FirstNameException : Exception
     {
-        public FirstNameException(string messege):base(messege)
+        public FirstNameException(string messege) : base(messege)
+        {
+
+        }   
+    }
+    public class LastNameException : Exception
+    {
+        public LastNameException(string messege) : base(messege)
         {
 
         }
